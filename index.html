@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Ruang SDM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    color:white;
+    text-align:center;
+    overflow:hidden;
+}
+
+.container{
+    max-width:800px;
+    padding:40px;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    background:rgba(255,255,255,.1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    margin-bottom:25px;
+    backdrop-filter:blur(10px);
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.highlight{
+    color:#38bdf8;
+}
+
+.tagline{
+    font-size:1.1rem;
+    opacity:.8;
+    margin-bottom:30px;
+}
+
+.coming{
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:30px;
+    background:#38bdf8;
+    color:#0f172a;
+    font-weight:600;
+    margin-bottom:30px;
+}
+
+.desc{
+    line-height:1.8;
+    opacity:.85;
+    margin-bottom:40px;
+}
+
+.footer{
+    font-size:.9rem;
+    opacity:.6;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(56,189,248,.08);
+    animation:float 8s infinite ease-in-out;
+}
+
+.circle:nth-child(1){
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:-50px;
+}
+
+.circle:nth-child(2){
+    width:350px;
+    height:350px;
+    bottom:-100px;
+    right:-100px;
+}
+
+@keyframes float{
+    50%{
+        transform:translateY(-20px);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="container">
+
+    <div class="logo">🎓</div>
+
+    <h1>Ruang <span class="highlight">SDM</span></h1>
+
+    <div class="coming">
+        🚀 COMING SOON
+    </div>
+
+    <div class="footer">
+        © 2026 Ruang SDM
+    </div>
+
+</div>
+
+</body>
+</html>
